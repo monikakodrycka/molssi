@@ -14,7 +14,7 @@ def num_list_3():
 @pytest.mark.parametrize("num_list, expected_mean",[
     ([1,2,3,4,5],3),
     ([0,2,4,6],3),	
-    ([1,2,3,4],2.5),	
+    ([1,2,3,4],2.5),
 
 ])
 
@@ -41,4 +41,22 @@ def test_zero_length():
     
     with pytest.raises(ZeroDivisionError):
         md.mean(test_list)
-	 
+
+
+@pytest.mark.parametrize("x", [0,1])
+@pytest.mark.parametrize("y", [2,3])
+
+def test_foo(x,y):
+    pass	
+
+
+
+def test_string():
+     sentence = "ThIsisTest"
+     title = md.title_case(sentence)
+     expected = "Thisistest"
+
+     assert title == expected
+
+
+ 
