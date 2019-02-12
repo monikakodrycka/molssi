@@ -9,7 +9,8 @@ dependencies:
   - pytest
   - pytest-cov
 
-    # Dependencies
+    # Other dependencies 
+  - numpy
 
     # Pip-only installs
   - pip:
