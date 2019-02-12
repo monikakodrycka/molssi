@@ -9,6 +9,7 @@ from __future__ import absolute_import
 
 # Add imports here
 from .mlssi_match import *
+from .string_util import *
 
 # Handle versioneer
 from ._version import get_versions
